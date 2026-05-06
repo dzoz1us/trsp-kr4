@@ -11,7 +11,7 @@ from app.main import app, db
 
 fake = Faker()
 
-@pytest_asyncio.fixture  # ← Изменил здесь
+@pytest_asyncio.fixture  
 async def async_client():
     transport = ASGITransport(app=app)
     async with AsyncClient(transport=transport, base_url="http://test") as client:

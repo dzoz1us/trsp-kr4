@@ -34,7 +34,7 @@ class UserOut(BaseModel):
     age: int
     email: str
 
-# --- Обработчики исключений ДОЛЖНЫ БЫТЬ ДО ЭНДПОИНТОВ ---
+
 
 # Обработчик для CustomExceptionA
 @app.exception_handler(CustomExceptionA)

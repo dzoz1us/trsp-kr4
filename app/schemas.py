@@ -4,8 +4,8 @@ from pydantic import BaseModel
 class ErrorResponse(BaseModel):
     detail: str
 
-class UserData(BaseModel):  # Для Задания 10.2
+class UserData(BaseModel):  
     username: str
     age: int
-    email: str  # Для простоты без EmailStr, но можно и с ним
+    email: str  
     password: str
